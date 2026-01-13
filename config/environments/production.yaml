@@ -1,0 +1,34 @@
+# Production Environment Configuration
+# Maps template variables to production-specific IDs
+
+env_name: production
+
+# Credential IDs (from n8n production instance)
+credentials:
+  googleSheetsOAuth2Api: "103"
+  zendeskApi: "203"
+  smtp: "303"
+  githubApi: "403"
+  n8nApi: "503"
+
+# Sub-workflow IDs
+workflow_ids:
+  dataValidationWorkflow: "30"
+  customerNotificationWorkflow: "31"
+
+# Node IDs (UUIDs from n8n production instance)
+node_ids:
+  webhook: "a1b2c3d4-e5f6-7890-abcd-111111111113"
+  googleSheets: "b2c3d4e5-f6a7-8901-bcde-222222222224"
+  zendesk: "c3d4e5f6-a7b8-9012-cdef-333333333335"
+  executeSubWorkflow: "d4e5f6a7-b8c9-0123-def0-444444444446"
+  sendEmail: "e5f6a7b8-c9d0-1234-ef01-555555555557"
+  respondToWebhook: "f6a7b8c9-d0e1-2345-f012-666666666668"
+
+# External resource IDs
+external_resources:
+  googleSheetId: "3C4D5E6F7G8H9I0J1K2L"
+  webhookId: "prod-webhook-abcdef"
+  githubRepoOwner: "Mai0403"
+  githubRepoName: "n8n-workflows"
+  n8nApiUrl: "https://n8n.example.com"
